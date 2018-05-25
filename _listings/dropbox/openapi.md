@@ -4,7 +4,7 @@ x-collection-name: Dropbox
 x-complete: 1
 info:
   title: Dropbox Notify Appendix API v1
-  description: the-dropbox-notify--is-a-part-of-dropbox-core-ap-with-a-separate-endpoint-for-notification-call
+  description: the-dropbox-notify--is-a-part-of-dropbox-core-ap-with-a-separate-endpoint-for-notification-call-
   termsOfService: https://www.dropbox.com/developers/reference/tos
   contact:
     name: Dropbox
