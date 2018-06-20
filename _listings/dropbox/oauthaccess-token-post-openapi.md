@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: Dropbox
 x-complete: 0
 info:
-  title: Dropbox Datastore API Shared Folders
-  description: /shared_folders
+  title: Dropbox Datastore API OAuth Access Token
+  description: /oauth/access_token
   version: "1"
 host: api.dropbox.com
 basePath: /1
@@ -182,115 +182,6 @@ paths:
       - Oauth
       - Access
       - Token
-  /oauth/request_token:
-    post:
-      summary: OAuth Request Token
-      description: /oauth/request_token
-      operationId: oauthrequest-token
-      x-api-path-slug: oauthrequest-token-post
-      responses:
-        200:
-          description: OK
-      tags:
-      - Oauth
-      - Request
-      - Token
-  /oauth2/token:
-    post:
-      summary: OAuth Token
-      description: /oauth2/token
-      operationId: oauth2token
-      x-api-path-slug: oauth2token-post
-      parameters:
-      - in: query
-        name: client_id
-        description: If credentials are passed in POST parameters, this parameter
-          should be present and should be the apps key (found in the App Console)
-      - in: query
-        name: client_secret
-        description: If credentials are passed in POST parameters, this parameter
-          should be present and should be the apps secret
-      - in: query
-        name: code
-        description: The code acquired by directing users to /oauth2/authorize?response_type=code
-      - in: query
-        name: grant_type
-        description: The grant type, which must be authorization_code
-      - in: query
-        name: redirect_uri
-        description: Only used to validate that it matches the original /oauth2/authorize,
-          not used to redirect again
-      responses:
-        200:
-          description: OK
-      tags:
-      - Oauth2
-      - Token
-  /revisions:
-    get:
-      summary: Get Revisions
-      description: /revisions
-      operationId: revisions
-      x-api-path-slug: revisions-get
-      parameters:
-      - in: query
-        name: locale
-        description: The metadata returned will have its size field translated based
-          on the given locale
-      - in: query
-        name: rev_limit
-        description: Default is 10
-      responses:
-        200:
-          description: OK
-      tags:
-      - Revisions
-  /search:
-    get:
-      summary: Search
-      description: /search
-      operationId: search
-      x-api-path-slug: search-get
-      parameters:
-      - in: query
-        name: file_limit
-        description: The maximum and default value is 1,000
-      - in: query
-        name: include_deleted
-        description: If this parameter is set to true, then files and folders that
-          have been deleted will also be included in the search
-      - in: query
-        name: include_membership
-        description: If true, metadata for a shared folder will include a list of
-          the members of the shared folder
-      - in: query
-        name: locale
-        description: The metadata returned will have its size field translated based
-          on the given locale
-      - in: query
-        name: query
-        description: The search string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Search
-  /shared_folders:
-    get:
-      summary: Shared Folders
-      description: /shared_folders
-      operationId: shared-folders
-      x-api-path-slug: shared-folders-get
-      parameters:
-      - in: query
-        name: id
-        description: The ID of a specific shared folder
-      responses:
-        200:
-          description: OK
-      tags:
-      - Shared
-      - Folders
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

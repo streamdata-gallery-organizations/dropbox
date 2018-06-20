@@ -1,45 +1,56 @@
 {
   "info": {
-    "name": "Dropbox Core A way to quickly get a cursor for the server's state, for use with /delta.",
-    "_postman_id": "8b72a4bb-53b4-413f-8728-cf0b82d67b69",
-    "description": "A way to quickly get a cursor for the server's state, for use with `/delta`.\n\nUnlike `/delta`, `/delta/latest_cursor` does not return any entries, so your app will not know about any\nexisting files or folders in the Dropbox account. For example, if your app processes future delta entries\nand sees that a folder was deleted, your app won't know what files were in that folder. Use this endpoint\nif your app only needs to know about new files and modifications and doesn't need to know about files that\nalready exist in Dropbox.\n\nIf you need to build local state to match the server state in Dropbox, you should instead use `/delta`.",
+    "name": "Dropbox Datastore API Latest Cursor",
+    "_postman_id": "21c477cd-23d4-49d1-ad37-d2a06389a7d3",
+    "description": "/delta/latest_cursor",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
     {
-      "name": "Storage",
+      "name": "Chunked",
       "item": [
         {
-          "id": "ad7917fb-712d-4d31-863d-abce5096250a",
-          "name": "a-way-to-quickly-get-a-cursor-for-the-servers-state-for-use-with-deltaunlike-delta-deltalatest-curso",
+          "id": "3d6917e6-5512-4f94-950a-a6fc9043233a",
+          "name": "chunked-upload",
           "request": {
-            "url": "http://api.dropbox.com/1/delta/latest_cursor",
-            "method": "POST",
+            "url": "http://api.dropbox.com/1/chunked_upload?offset=%7B%7D&upload_id=%7B%7D",
+            "method": "PUT",
             "body": {
-              "mode": "urlencoded",
-              "urlencoded": [
-                {
-                  "key": "include_media_info",
-                  "value": "{}",
-                  "disabled": false,
-                  "description": "If `true`, the returned cursor will be encoded with `include_media_info` set to `true` for usewith `/delta`"
-                },
-                {
-                  "key": "path_prefix",
-                  "value": "{}",
-                  "disabled": false,
-                  "description": "If present, the returned cursor will be encoded with a `path_prefix` for the specified path for usewith `/delta`"
-                }
-              ]
+              "mode": "raw"
             },
-            "description": "A way to quickly get a cursor for the server's state, for use with `/delta`.\n\nUnlike `/delta`, `/delta/latest_cursor` does not return any entries, so your app will not know about any\nexisting files or folders in the Dropbox account. For example, if your app processes future delta entries\nand sees that a folder was deleted, your app won't know what files were in that folder. Use this endpoint\nif your app only needs to know about new files and modifications and doesn't need to know about files that\nalready exist in Dropbox.\n\nIf you need to build local state to match the server state in Dropbox, you should instead use `/delta`."
+            "description": "/chunked_upload"
           },
           "response": [
             {
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "1eb525f4-b881-4b85-a12e-6c12d13f36ac"
+              "id": "3a163556-ba9a-4f61-974a-82c03077c244"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Delta",
+      "item": [
+        {
+          "id": "edbef224-3613-4672-b757-1d2935605ded",
+          "name": "deltalatest-cursor",
+          "request": {
+            "url": "http://api.dropbox.com/1/delta/latest_cursor?include_media_info=%7B%7D&path_prefix=%7B%7D",
+            "method": "POST",
+            "body": {
+              "mode": "raw"
+            },
+            "description": "/delta/latest_cursor"
+          },
+          "response": [
+            {
+              "status": "OK",
+              "code": 200,
+              "name": "Response_200",
+              "id": "f1c20867-4e94-4576-be66-f7db62c664b4"
             }
           ]
         }

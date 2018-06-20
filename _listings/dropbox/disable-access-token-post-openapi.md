@@ -3,14 +3,9 @@ swagger: "2.0"
 x-collection-name: Dropbox
 x-complete: 0
 info:
-  title: Dropbox Core Disables the access token.
-  description: Disables the access token used to authenticate the call. This method
-    works for OAuth 1 and OAuth 2 tokens.
-  termsOfService: https://www.dropbox.com/developers/reference/tos
-  contact:
-    name: Dropbox
-    url: https://www.dropbox.com/developers
-  version: 1.0.0
+  title: Dropbox Datastore API Disable Access Token
+  description: /disable_access_token
+  version: "1"
 host: api.dropbox.com
 basePath: /1
 schemes:
@@ -20,36 +15,61 @@ produces:
 consumes:
 - application/json
 paths:
-  /oauth2/token_from_oauth1:
-    post:
-      summary: Convert OAuth 1 token to OAuth 2 token.
-      description: |-
-        This endpoint should be used by apps transitioning from OAuth 1 to OAuth 2. It will return an OAuth 2 token
-        for the authenticated user.
-      operationId: this-endpoint-should-be-used-by-apps-transitioning-from-oauth-1-to-oauth-2-it-will-return-an-oauth-2
-      x-api-path-slug: oauth2token-from-oauth1-post
+  /chunked_upload:
+    put:
+      summary: Chunked Upload
+      description: /chunked_upload
+      operationId: chunked-upload
+      x-api-path-slug: chunked-upload-put
+      parameters:
+      - in: query
+        name: offset
+        description: The byte offset of this chunk, relative to the beginning of the
+          full file
+      - in: query
+        name: upload_id
+        description: The unique ID of the in-progress upload on the server
       responses:
         200:
           description: OK
       tags:
-      - Storage
-      - Documents
-      - Oauth2
-      - Token_from_oauth1
+      - Chunked
+      - Upload
+  /delta/latest_cursor:
+    post:
+      summary: Latest Cursor
+      description: /delta/latest_cursor
+      operationId: deltalatest-cursor
+      x-api-path-slug: deltalatest-cursor-post
+      parameters:
+      - in: query
+        name: include_media_info
+        description: If true, the returned cursor will be encoded with include_media_info
+          set to true for use with /delta
+      - in: query
+        name: path_prefix
+        description: If present, the returned cursor will be encoded with a path_prefix
+          for the specified path for use with /delta
+      responses:
+        200:
+          description: OK
+      tags:
+      - Delta
+      - Latest
+      - Cursor
   /disable_access_token:
     post:
-      summary: Disables the access token.
-      description: Disables the access token used to authenticate the call. This method
-        works for OAuth 1 and OAuth 2 tokens.
-      operationId: disables-the-access-token-used-to-authenticate-the-call-this-method-works-for-oauth-1-and-oauth-2-to
+      summary: Disable Access Token
+      description: /disable_access_token
+      operationId: disable-access-token
       x-api-path-slug: disable-access-token-post
       responses:
         200:
           description: OK
       tags:
-      - Storage
-      - Documents
-      - Disable_access_token
+      - Disable
+      - Access
+      - Token
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

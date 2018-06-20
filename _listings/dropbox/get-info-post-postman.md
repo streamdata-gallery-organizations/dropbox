@@ -1,31 +1,31 @@
 {
   "info": {
-    "name": "Dropbox Datastore API Disable Access Token",
-    "_postman_id": "a7f2aec3-afe2-4309-887d-42c2ed5f4b35",
-    "description": "/disable_access_token",
+    "name": "Cloud Elements - Dropbox For Business API Get Info",
+    "_postman_id": "10dfb116-a572-4fb2-ac88-c15519c83689",
+    "description": "Get info.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
     {
-      "name": "Disable",
+      "name": "Info",
       "item": [
         {
-          "id": "95c81e0d-75b7-4df3-8afd-806bbd68fc30",
-          "name": "disable-access-token",
+          "id": "7753b27d-413e-4277-9fd8-207d317fe834",
+          "name": "postGetInfo",
           "request": {
-            "url": "http://api.dropbox.com/1/disable_access_token",
+            "url": "http://api.dropbox.com/1/team/get_info",
             "method": "POST",
             "body": {
               "mode": "raw"
             },
-            "description": "/disable_access_token"
+            "description": "Get info."
           },
           "response": [
             {
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "cf54ea3b-9050-47d1-a9c9-b70fd78b865e"
+              "id": "8f5f8326-71d3-41ac-ae5a-a837603a4497"
             }
           ]
         }

@@ -7,11 +7,178 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbo
 x-kinRank: "10"
 x-alexaRank: "89"
 tags: Dropbox
-created: "2018-05-25"
-modified: "2018-05-25"
+created: "2018-06-19"
+modified: "2018-06-19"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Cloud Elements - Dropbox For Business API Get Info
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Get info.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//get_info
+  tags: Info
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/get-info-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/get-info-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API Get Events
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Get events.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//log/get_events
+  tags: Events
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/logget-events-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/logget-events-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API Add Member
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Add member.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//members/add
+  tags: Member
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersadd-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersadd-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API Get Member Info
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Get member info.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//members/get_info
+  tags: Member,Info
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersget-info-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersget-info-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API Get Info Batch
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Get info batch.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//members/get_info_batch
+  tags: Info,Batch
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersget-info-batch-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersget-info-batch-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API List Members
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: List members.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//members/list
+  tags: List,Members
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/memberslist-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/memberslist-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API Remove
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Remove.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//members/remove
+  tags: Remove
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersremove-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersremove-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API Set Member Permissions
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Set member permissions.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//members/set_permissions
+  tags: Set,Member,Permissions
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersset-permissions-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersset-permissions-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API Set Profile
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Set profile.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//members/set_profile
+  tags: Set,Profile
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersset-profile-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/membersset-profile-get-openapi.md
+- name: Cloud Elements - Dropbox For Business API Get Activity
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Get activity.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//reports/get_activity
+  tags: Activity
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/reportsget-activity-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/reportsget-activity-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API Get Devices
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Get devices.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//reports/get_devices
+  tags: Devices
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/reportsget-devices-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/reportsget-devices-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API Get Membership
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Get membership.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//reports/get_membership
+  tags: Membership
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/reportsget-membership-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/reportsget-membership-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API Get Storage
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Get storage.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team//reports/get_storage
+  tags: Storage
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/reportsget-storage-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/reportsget-storage-post-openapi.md
+- name: Cloud Elements - Dropbox For Business API
+  x-api-slug: cloud-elements--dropbox-for-business-api
+  description: Dropbox is a modern workspace designed to reduce busywork-so you can
+    focus on the things that matter. Sign in and put your creative energy to work.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1/team
+  tags: Dropbox
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/openapi.md
 - name: Dropbox Content Downloads a file.
   x-api-slug: dropbox-content
   description: |-
@@ -20,7 +187,7 @@ apis:
     This method also supports [HTTP Range Retrieval Requests](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35.2)
     to allow retrieving partial file contents.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api-content.dropbox.com//1//files/{root}/{path}
   tags: Storage,Documents,Files,Root,Path
   properties:
@@ -43,7 +210,7 @@ apis:
     encoding. To upload larger files, use [/chunked_upload](https://www.dropbox.com/developers/core/docs#chunked-upload)
     instead.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api-content.dropbox.com//1//files_put/{root}/{path}
   tags: Storage,Documents,Files,Put,Root,Path
   properties:
@@ -64,7 +231,7 @@ apis:
     encoding. To upload larger files, use [/chunked_upload](https://www.dropbox.com/developers/core/docs#chunked-upload)
     instead.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api-content.dropbox.com//1//files_put/{root}/{path}
   tags: Storage,Documents,Files,Put,Root,Path
   properties:
@@ -79,7 +246,7 @@ apis:
 
     Photos that are larger than 20MB in size won't be converted to a thumbnail.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api-content.dropbox.com//1//thumbnails/{root}/{path}
   tags: Storage,Documents,Thumbnails,Root,Path
   properties:
@@ -93,7 +260,7 @@ apis:
     Previews are only generated for the files with the following extensions: .doc, .docx, .docm, .ppt, .pps,
     .ppsx, .ppsm, .pptx, .pptm, .xls, .xlsx, .xlsm, .rtf
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api-content.dropbox.com//1//previews/{root}/{path}
   tags: Storage,Documents,Previews,Root,Path
   properties:
@@ -123,7 +290,7 @@ apis:
 
     A chunked upload can take a maximum of 48 hours before expiring.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api-content.dropbox.com//1//chunked_upload
   tags: Storage,Documents,Chunked,Upload
   properties:
@@ -139,7 +306,7 @@ apis:
     file contents in the request body, `/commit_chunked_upload` takes a parameter `upload_id`, which is obtained
     when the file contents are uploaded via `/chunked_upload`.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api-content.dropbox.com//1//commit_chunked_upload/{root}/{path}
   tags: Storage,Documents,Commit,Chunked,Upload,Root,Path
   properties:
@@ -150,7 +317,7 @@ apis:
   description: Dropbox is a modern workspace designed to reduce busywork-so you can
     focus on the things that matter. Sign in and put your creative energy to work.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api-content.dropbox.com//1
   tags: Dropbox
   properties:
@@ -162,7 +329,7 @@ apis:
     This endpoint should be used by apps transitioning from OAuth 1 to OAuth 2. It will return an OAuth 2 token
     for the authenticated user.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//oauth2/token_from_oauth1
   tags: Storage,Documents,Oauth2,Token_from_oauth1
   properties:
@@ -175,7 +342,7 @@ apis:
   description: Disables the access token used to authenticate the call. This method
     works for OAuth 1 and OAuth 2 tokens.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//disable_access_token
   tags: Storage,Documents,Disable_access_token
   properties:
@@ -187,7 +354,7 @@ apis:
   x-api-slug: dropbox-core
   description: Retrieves information about the user's account.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//account/info
   tags: Storage,Documents,Account,Info
   properties:
@@ -202,7 +369,7 @@ apis:
 
     **Note:** `modified`, `rev`, and `revision` aren't returned in the metadata for the root/top-level path.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//metadata/{root}/{path}
   tags: Storage,Documents,Metadata,Root,Path
   properties:
@@ -255,7 +422,7 @@ apis:
     the `` values above are lower-cased versions of the actual path. The last path component of the
     `` value will be case-preserved.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//delta
   tags: Storage,Documents,Delta
   properties:
@@ -277,7 +444,7 @@ apis:
 
     If you need to build local state to match the server state in Dropbox, you should instead use `/delta`.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//delta/latest_cursor
   tags: Storage,Documents,Delta,Latest_cursor
   properties:
@@ -295,7 +462,7 @@ apis:
     [Extended Version History](https://www.dropbox.com/help/113)). You can use the revision number in conjunction
     with the `/restore` call to revert the file to its previous state.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//revisions/{root}/{path}
   tags: Storage,Documents,Revisions,Root,Path
   properties:
@@ -311,7 +478,7 @@ apis:
     Unlike downloading a file at a given revision and then re-uploading it, this call is atomic. It also saves
     a bunch of bandwidth.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//restore/{root}/{path}
   tags: Storage,Documents,Restore,Root,Path
   properties:
@@ -328,7 +495,7 @@ apis:
 
     **Note:** Recent changes may not immediately be reflected in search results due to a short delay in indexing.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//search/{root}/{path}
   tags: Storage,Documents,Search,Root,Path
   properties:
@@ -345,7 +512,7 @@ apis:
 
     **Note:** Recent changes may not immediately be reflected in search results due to a short delay in indexing.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//search/{root}/{path}
   tags: Storage,Documents,Search,Root,Path
   properties:
@@ -368,7 +535,7 @@ apis:
 
     Note that other values may be added at any time.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//shares/{root}/{path}
   tags: Storage,Documents,Shares,Root,Path
   properties:
@@ -388,7 +555,7 @@ apis:
     The `/media` link expires after four hours, allotting enough time to stream files, but not enough to leave
     a connection open indefinitely.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//media/{root}/{path}
   tags: Storage,Documents,Media,Root,Path
   properties:
@@ -404,7 +571,7 @@ apis:
     This reference string can be used to copy that file to another user's Dropbox by passing it in as the
     `from_copy_ref` parameter on [/fileops/copy](https://www.dropbox.com/developers/core/docs#fileops-copy).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//copy_ref/{root}/{path}
   tags: Storage,Documents,Copy,Root,Path
   properties:
@@ -427,7 +594,7 @@ apis:
     have been invited but have not accepted. When the `active` field is `false`, it means that a user has left
     a shared folder (but may still rejoin).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//shared_folders
   tags: Storage,Documents,Shared_folders
   properties:
@@ -450,7 +617,7 @@ apis:
     have been invited but have not accepted. When the `active` field is `false`, it means that a user has left
     a shared folder (but may still rejoin).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//shared_folders/{shared_folder_id}
   tags: Storage,Documents,Shared_folders,Shared_folder_id
   properties:
@@ -465,7 +632,7 @@ apis:
 
     If the given path already exists, the file will be renamed to avoid the conflict (e.g. `myfile (1).txt`).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//save_url/{root}/{path}
   tags: Storage,Documents,URL,Root,Path
   properties:
@@ -481,7 +648,7 @@ apis:
     hasn't yet completed.\n  * `COMPLETE` \u2013 The job is complete.\n  * `FAILED`
     \u2013 The job failed. An additional `error` field will describe the failure."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//save_url_job/{job-id}
   tags: Storage,Documents,Save_url_job,Job-id
   properties:
@@ -493,7 +660,7 @@ apis:
   x-api-slug: dropbox-core
   description: Copies a file or folder to a new location.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//fileops/copy
   tags: Storage,Documents,Fileops,Copy
   properties:
@@ -505,7 +672,7 @@ apis:
   x-api-slug: dropbox-core
   description: Creates a folder.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//fileops/create_folder
   tags: Storage,Documents,Fileops,Create_folder
   properties:
@@ -517,7 +684,7 @@ apis:
   x-api-slug: dropbox-core
   description: Deletes a file or folder.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//fileops/delete
   tags: Storage,Documents,Fileops,Delete
   properties:
@@ -529,7 +696,7 @@ apis:
   x-api-slug: dropbox-core
   description: Moves a file or folder to a new location.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1//fileops/move
   tags: Storage,Documents,Fileops,Move
   properties:
@@ -542,7 +709,185 @@ apis:
   description: Dropbox is a modern workspace designed to reduce busywork-so you can
     focus on the things that matter. Sign in and put your creative energy to work.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: Dropbox
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/openapi.md
+- name: Dropbox Datastore API Chunked Upload
+  x-api-slug: dropbox-datastore-api
+  description: /chunked_upload
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//chunked_upload
+  tags: Chunked,Upload
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/chunked-upload-put-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/chunked-upload-put-openapi.md
+- name: Dropbox Datastore API Latest Cursor
+  x-api-slug: dropbox-datastore-api
+  description: /delta/latest_cursor
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//delta/latest_cursor
+  tags: Delta,Latest,Cursor
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/deltalatest-cursor-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/deltalatest-cursor-post-openapi.md
+- name: Dropbox Datastore API Disable Access Token
+  x-api-slug: dropbox-datastore-api
+  description: /disable_access_token
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//disable_access_token
+  tags: Disable,Access,Token
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/disable-access-token-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/disable-access-token-post-openapi.md
+- name: Dropbox Datastore API Create Folder
+  x-api-slug: dropbox-datastore-api
+  description: /fileops/create_folder
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//fileops/create_folder
+  tags: Fileops,Create,Folder
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/fileopscreate-folder-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/fileopscreate-folder-post-openapi.md
+- name: Dropbox Datastore API Get File
+  x-api-slug: dropbox-datastore-api
+  description: /files (GET)
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//files
+  tags: Files
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/files-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/files-get-openapi.md
+- name: Dropbox Datastore API Add Media
+  x-api-slug: dropbox-datastore-api
+  description: /media
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//media
+  tags: Media
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/media-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/media-post-openapi.md
+- name: Dropbox Datastore API Get Meta Data
+  x-api-slug: dropbox-datastore-api
+  description: /metadata
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//metadata
+  tags: Metadata
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/metadata-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/metadata-get-openapi.md
+- name: Dropbox Datastore API OAuth Access Token
+  x-api-slug: dropbox-datastore-api
+  description: /oauth/access_token
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//oauth/access_token
+  tags: Oauth,Access,Token
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/oauthaccess-token-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/oauthaccess-token-post-openapi.md
+- name: Dropbox Datastore API OAuth Request Token
+  x-api-slug: dropbox-datastore-api
+  description: /oauth/request_token
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//oauth/request_token
+  tags: Oauth,Request,Token
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/oauthrequest-token-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/oauthrequest-token-post-openapi.md
+- name: Dropbox Datastore API OAuth Token
+  x-api-slug: dropbox-datastore-api
+  description: /oauth2/token
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//oauth2/token
+  tags: Oauth2,Token
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/oauth2token-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/oauth2token-post-openapi.md
+- name: Dropbox Datastore API Get Revisions
+  x-api-slug: dropbox-datastore-api
+  description: /revisions
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//revisions
+  tags: Revisions
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/revisions-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/revisions-get-openapi.md
+- name: Dropbox Datastore API Search
+  x-api-slug: dropbox-datastore-api
+  description: /search
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//search
+  tags: Search
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/search-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/search-get-openapi.md
+- name: Dropbox Datastore API Shared Folders
+  x-api-slug: dropbox-datastore-api
+  description: /shared_folders
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//shared_folders
+  tags: Shared,Folders
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/shared-folders-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/shared-folders-get-openapi.md
+- name: Dropbox Datastore API Get Thumbnails
+  x-api-slug: dropbox-datastore-api
+  description: /thumbnails
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//thumbnails
+  tags: Thumbnails
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/thumbnails-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/thumbnails-get-openapi.md
+- name: Dropbox Datastore API
+  x-api-slug: dropbox-datastore-api
+  description: Keep your apps structured data in sync with Dropbox
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1
   tags: Dropbox
   properties:
@@ -559,7 +904,7 @@ apis:
     Unlike most other API endpoints, this call does not require OAuth authentication. The passed in `cursor` can
     only be acquired via an authenticated call to [/delta](https://www.dropbox.com/developers/core/docs#delta).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api-notify.dropbox.com//1//longpoll_delta
   tags: Documents, Notify
   properties:
@@ -572,7 +917,7 @@ apis:
   description: Dropbox is a modern workspace designed to reduce busywork-so you can
     focus on the things that matter. Sign in and put your creative energy to work.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: https://www.dropbox.com
+  humanURL: http://dropbox.com
   baseURL: https://api-notify.dropbox.com//1
   tags: Dropbox
   properties:
@@ -631,6 +976,8 @@ x-common:
   url: https://twitter.com/dropbox
 - type: x-webhooks
   url: https://www.dropbox.com/developers/webhooks/docs
+- type: x-website
+  url: http://dropbox.com
 - type: x-website
   url: https://www.dropbox.com
 include: []
