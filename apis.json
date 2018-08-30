@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Dropbox",
+	"description": "This is a repository of dropbox APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/dropbox.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-30",
+	"url": "http://dropbox.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Dropbox",
+			"x-api-slug": "dropbox",
+			"description": "Dropbox is a modern workspace designed to reduce busywork-so you can focus on the things that matter. Sign in and put your creative energy to work.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg",
+			"humanURL": "http://dropbox.com",
+			"baseURL": "https://api-notify.dropbox.com//1",
+			"tags": "Dropbox",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Dropbox",
+	"include": [
+		{
+			"name": "Dropbox",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/dropbox/master/_listings/dropbox/apis.yaml"
+		}
+	]
+}

@@ -2,7 +2,7 @@
   "info": {
     "name": "Dropbox Core Check the status of a save URL job.",
     "_postman_id": "a74e6fc8-08f9-48a8-80ac-d0a21e258bef",
-    "description": "Check the status of a [save URL](https://www.dropbox.com/developers/core/docs#save-url) job.\n\nStatus field may have one of the following values:\n  * `PENDING` – The job has not yet started.\n  * `DOWNLOADING` – The job has started but hasn't yet completed.\n  * `COMPLETE` – The job is complete.\n  * `FAILED` – The job failed. An additional `error` field will describe the failure.",
+    "description": "Check the status of a [save URL](https://www.dropbox.com/developers/core/docs#save-url) job.\n\nStatus field may have one of the following values:\n  * `PENDING` ??? The job has not yet started.\n  * `DOWNLOADING` ??? The job has started but hasn't yet completed.\n  * `COMPLETE` ??? The job is complete.\n  * `FAILED` ??? The job failed. An additional `error` field will describe the failure.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
@@ -741,7 +741,7 @@
             "body": {
               "mode": "raw"
             },
-            "description": "Check the status of a [save URL](https://www.dropbox.com/developers/core/docs#save-url) job.\n\nStatus field may have one of the following values:\n  * `PENDING` – The job has not yet started.\n  * `DOWNLOADING` – The job has started but hasn't yet completed.\n  * `COMPLETE` – The job is complete.\n  * `FAILED` – The job failed. An additional `error` field will describe the failure."
+            "description": "Check the status of a [save URL](https://www.dropbox.com/developers/core/docs#save-url) job.\n\nStatus field may have one of the following values:\n  * `PENDING` ??? The job has not yet started.\n  * `DOWNLOADING` ??? The job has started but hasn't yet completed.\n  * `COMPLETE` ??? The job is complete.\n  * `FAILED` ??? The job failed. An additional `error` field will describe the failure."
           },
           "response": [
             {
